@@ -42,7 +42,7 @@ services.Configure<AppSettings>(appSettings);
 // AppSettings
        private readonly AppSettings _appSettings;
 
-        public ImageAnalyseontroller(IOptions<AppSettings> appSettings){
+        public HomeController(IOptions<AppSettings> appSettings){
             _appSettings = appSettings.Value;
         }
 ```
